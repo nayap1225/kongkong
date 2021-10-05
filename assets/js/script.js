@@ -1,7 +1,5 @@
 $(function () {
 
-
-
     var _st = 0;
     $('.btn_menu').on('click',function() {
         
