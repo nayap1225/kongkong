@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/* font face */
+$SpoqaHanSansNeoFonts: (
+  Thin: 100,
+  Light: 200,
+  Regular: 400,
+  Medium: 600,
+  Bold: 700,
+);
+@each $key, $item in $SpoqaHanSansNeoFonts {
+  @include fontface($SpoqaHanSansNeo, $key, $item);
+}

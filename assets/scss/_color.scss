@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+.color-primary {
+  color: $colorPrimary;
+  // color: variable.$colorPrimary;
+}
+.color-primary--lighten {
+  color: lighten($colorPrimary, 20%);
+}
+.color-primary--dark {
+  color: darken($colorPrimary, 20%);
+}
+.color-secondary {
+  color: $colorSecondary;
+  // color: variable.$colorSecondary;
+}
+.color-secondary--lighten {
+  color: lighten($colorSecondary, 20%);
+}
+.color-secondary--dark {
+  color: darken($colorSecondary, 20%);
+}
+
+@for $i from 1 through length($colorGray) {
+  .color-gray-#{$i}00 {
+    color: nth($colorGray, $i);
+  }
+}

@@ -1,0 +1,71 @@
+@charset 'utf-8';
+
+@mixin space($max, $class, $style) {
+  @for $i from 0 through $max {
+    @if $i % 5 == 0 {
+      .#{$class}-#{$i} {
+        #{$style}: #{$i}px;
+      }
+      @debug #{$class}-#{$i};
+    }
+  }
+}
+
+@mixin fontface($name, $key, $item) {
+  @font-face {
+    font-family: '#{$name}';
+    font-style: normal;
+    font-weight: $item;
+    src: url(../fonts/#{$name}-#{$key}.eot);
+    src: url(../fonts/#{$name}-#{$key}.eot?#iefix) format('embedded-opentype'), url(../fonts/#{$name}-#{$key}.woff) format('woff'), url(../fonts/#{$name}-#{$key}.ttf) format('truetype');
+  }
+}
+
+// @mixin fontFace($fontFamily, $weight) {
+//   @font-face {
+//     font-family: '#{$fontFamily}';
+//     font-style: normal;
+//     font-weight: $weight;
+//     src: url(../fonts/SpoqaHanSansNeo-Thin.eot);
+//     src: url(../fonts/SpoqaHanSansNeo-Thin.eot?#iefix) format('embedded-opentype'), url(../fonts/SpoqaHanSansNeo-Thin.woff2) format('woff'), url(../fonts/SpoqaHanSansNeo-Thin.woff) format('woff'),
+//       url(../fonts/SpoqaHanSansNeo-Thin.ttf) format('truetype');
+//   }
+// }
+
+// @function text-contrast($bg-color, $val: 70%) {
+//   // 변수 $value 초기 값 설정 null
+//   $value: null;
+
+//   // 전달인자 값을 확인 (유효성 검사)
+//   @if (type-of($bg-color) != color) {
+//     @warn "첫번째 전달인자 값은 컬러 값이어야 합니다. 예) #fff, red, rgba()";
+//     @debug '사용자가 전달한 값은 #{$bg-color}입니다.';
+//   }
+//   @if (lightness($bg-color) > 50%) {
+//     $value: darken($bg-color, $val);
+//   } @else {
+//     $value: lighten($bg-color, $val);
+//   }
+//   // 함수는 반드시 return 값이 필요하다
+//   @return $value;
+// }
+
+// //  Photoshop 자간 간격 설정
+// @function lt_Spacing($spacing) {
+//   @if (type-of($spacing) !=number) {
+//     @warn "전달한 인자 값은 #{$spacing}입니다 제대로 된 값(숫자)을 전달해주세요.";
+//   }
+//   @return calc(deUnit($spacing) / 1000) + em;
+// }
+
+// // 단위 제거 함수
+// @function deUnit($value) {
+//   @return (calc($value / ($value * 0 + 1)));
+// }
+
+// .demo-01 {
+//   background-color: text-contrast(#c4c4c4, 50%);
+// }
+// .demo-02 {
+//   letter-spacing: lt_Spacing(16);
+// }

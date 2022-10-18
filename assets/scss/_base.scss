@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+@include space(30, mgt, margin-top);
+@include space(30, mgb, margin-bottom);
+@include space(30, mgs, margin-left);
+@include space(30, mge, margin-right);
+@include space(30, pdt, padding-top);
+@include space(30, pdb, padding-bottom);
+@include space(30, pds, padding-left);
+@include space(30, pde, padding-right);
+// @include mixin.space(30, mgt, margin-top);
+// @include mixin.space(30, mgb, margin-bottom);
+// @include mixin.space(30, mgs, margin-left);
+// @include mixin.space(30, mge, margin-right);
+// @include mixin.space(30, pdt, padding-top);
+// @include mixin.space(30, pdb, padding-bottom);
+// @include mixin.space(30, pds, padding-left);
+// @include mixin.space(30, pde, padding-right);

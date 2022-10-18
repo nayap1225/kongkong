@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+
+@debug math.$e;
+
+.a {
+  width: #{$maxWidth}px;
+}
+
+// .a {
+//   width: #{math.div($maxWidth 2)}px;
+// }
