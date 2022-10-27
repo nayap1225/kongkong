@@ -23,7 +23,19 @@ body, html {width: 100%; height: 100%; font-family: Apple SD Gothic Neo,Roboto,-
     </header>
 
     <main id="main">
-
+      <p><input type="button" value="New Window" onclick="new_window();"></p>
+      <script>
+        function new_window() {
+          window.open(
+            "public/index.html",
+            "Child",
+            "width=400, height=300, top=50, left=50, location=no,toolbar=yes, menubar=no,directories=no,status=no,scrollbars=yes,resizable=no"
+            // "width=400, height=300, top=50, left=50, location=no,toolbar=yes, menubar=no,directories=no,status=no,scrollbars=yes,resizable=no"
+          );
+        }
+//         var childWin = window.open("", "childWin");
+// childWin.location.href = "https://news.hada.io";;
+      </script>
     </main>
 
     <footer id="footer">
@@ -33,5 +45,10 @@ body, html {width: 100%; height: 100%; font-family: Apple SD Gothic Neo,Roboto,-
     </footer>
 
   </div>
+
+  <!-- <script>
+    window.open('http://www.naver.com', '네이버팝업', 
+           'width=500, height=700, scrollbars=yes, resizable=no')
+  </script> -->
 </body>
 </html>
