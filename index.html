@@ -8,37 +8,55 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 body, html {width: 100%; height: 100%; font-family: Apple SD Gothic Neo,Roboto,-apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 10px; color: #555;}
 
-#wrap {display: flex; flex-direction: column; min-width: 128rem; min-height: 100%;}
-#header {position: sticky; top: 0; left: 0; width: 100%; }
-#main {flex: 1 1 auto;}
-#footer {padding: 1rem; padding: 1rem 0; font-size: 1.2rem; color: #aaa; border-top: 1px solid #d1d1d1; text-align: center; background: #fff;}
-.inner {width: 128rem; margin: 0 auto; padding: 0 2rem;}
+#wrap {display: flex; flex-direction: column; min-height: 100%; background: conic-gradient(#de32c9, #3153ec, #de32c9);
+background:radial-gradient(ellipse at 20% 20%, #de32c9 0%, transparent 70%),
+  radial-gradient(ellipse at 60% 10%, #054d84 0%, transparent 70%),
+  radial-gradient(ellipse at 90% 20%, #f2ec5d 0%, transparent 80%),
+  radial-gradient(ellipse at 100% 100%, #ee033c 0%, transparent 70%),
+  radial-gradient(ellipse at 20% 100%, #6f372d 0%, transparent 70%);
+}
+#header {position: sticky; top: 0; left: 0; width: 100%; box-shadow: 0 0 4px rgba(0,0,0,.5);}
+#main {display: flex; flex-direction: column; flex: 1 1 auto; align-items: center; justify-content: center; padding: 10rem;}
+#footer {padding: 1rem; padding: 1rem 0; font-size: 1.2rem; color: #888aaa; border-top: 1px solid #d1d1d1; text-align: center; background: rgba(255,255,255,.6);}
+.inner {margin: 0 auto; padding: 0 2rem;}
+
+.main-box {display: flex; gap: 8rem; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10rem; border-radius: 2rem; box-shadow: 0 0 .5rem rgba(51,51,51, .5); background: rgba(255,255,255,.3);}
+.main-box a {display: block; color: #333; font-size: 10rem;}
+
+
 
   </style>
 </head>
 <body>
   <div id="wrap">
     <header id="header">
-
+      <h1 class="header-logo">KongeOnge & Kkome</h1>
     </header>
 
     <main id="main">
-      <p><input type="button" value="New Window" onclick="new_window();"></p>
-      <script>
-        // function new_window() {
-        //   window.open(
-        //     "public/index.html",
-        //     "Child",
-        //     "width=400, height=300, top=50, left=50, location=no,toolbar=yes, menubar=no,directories=no,status=no,scrollbars=yes,resizable=no"
-        //     // "width=400, height=300, top=50, left=50, location=no,toolbar=yes, menubar=no,directories=no,status=no,scrollbars=yes,resizable=no"
-        //   );
-        // }
-//         var childWin = window.open("", "childWin", );
-// childWin.location.href = "https://news.hada.io";;
-
-var w1 = window.open('','public', 'width=400, height=300, top=50, left=50');
-w1.location.href='public/index.html';
-      </script>
+      <section class="main-box">
+        <a href="javascript:void(0);">
+          <i class="fa-brands fa-html5"></i>
+        </a>
+        <a href="javascript:void(0);">
+          <i class="fa-brands fa-css3-alt"></i>
+        </a>
+        <a href="javascript:void(0);">
+          <i class="fa-brands fa-sass"></i>
+        </a>
+        <a href="javascript:void(0);">
+          <i class="fa-brands fa-square-js"></i>
+        </a>
+        <a href="javascript:void(0);">
+          <i class="fa-brands fa-react"></i>
+        </a>
+        <a href="javascript:void(0);">
+          <i class="fa-brands fa-vuejs"></i>
+        </a>
+        <a href="javascript:void(0);">
+          <i class="fa-brands fa-square-git"></i>
+        </a>
+      </section>
     </main>
 
     <footer id="footer">
@@ -49,9 +67,6 @@ w1.location.href='public/index.html';
 
   </div>
 
-  <!-- <script>
-    window.open('http://www.naver.com', '네이버팝업', 
-           'width=500, height=700, scrollbars=yes, resizable=no')
-  </script> -->
+  <script src="https://kit.fontawesome.com/e754a75fe4.js" crossorigin="anonymous"></script>
 </body>
 </html>

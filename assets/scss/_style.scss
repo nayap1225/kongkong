@@ -6,6 +6,7 @@
 
 .a {
   width: #{$maxWidth}px;
+  height: math.div(600px, 960px) * 100px;
 }
 
 // .a {

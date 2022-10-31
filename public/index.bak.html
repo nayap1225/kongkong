@@ -1,0 +1,57 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1, maximun-scale=1, viewport-fit=cover, shrink-to-fit=no">
+  <title>kongEkong</title>
+  <style>
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body, html {width: 100%; height: 100%; font-family: Apple SD Gothic Neo,Roboto,-apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 10px; color: #555;}
+
+#wrap {display: flex; flex-direction: column; min-width: 128rem; min-height: 100%;}
+#header {position: sticky; top: 0; left: 0; width: 100%; }
+#main {flex: 1 1 auto;}
+#footer {padding: 1rem; padding: 1rem 0; font-size: 1.2rem; color: #aaa; border-top: 1px solid #d1d1d1; text-align: center; background: #fff;}
+.inner {width: 128rem; margin: 0 auto; padding: 0 2rem;}
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+
+    </header>
+
+    <main id="main">
+      <p><input type="button" value="New Window" onclick="new_window();"></p>
+      <script>
+        // function new_window() {
+        //   window.open(
+        //     "public/index.html",
+        //     "Child",
+        //     "width=400, height=300, top=50, left=50, location=no,toolbar=yes, menubar=no,directories=no,status=no,scrollbars=yes,resizable=no"
+        //     // "width=400, height=300, top=50, left=50, location=no,toolbar=yes, menubar=no,directories=no,status=no,scrollbars=yes,resizable=no"
+        //   );
+        // }
+//         var childWin = window.open("", "childWin", );
+// childWin.location.href = "https://news.hada.io";;
+
+var w1 = window.open('','public', 'width=400, height=300, top=50, left=50');
+w1.location.href='public/index.html';
+      </script>
+    </main>
+
+    <footer id="footer">
+      <div class="inner">
+        kongkong&copy;2022.
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- <script>
+    window.open('http://www.naver.com', '네이버팝업', 
+           'width=500, height=700, scrollbars=yes, resizable=no')
+  </script> -->
+</body>
+</html>
