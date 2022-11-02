@@ -8,7 +8,7 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 body, html {width: 100%; height: 100%; font-family: Apple SD Gothic Neo,Roboto,-apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 10px; color: #555;}
 
-#wrap {display: flex; flex-direction: column; min-height: 100%; background: conic-gradient(#de32c9, #3153ec, #de32c9);
+#wrap {display: flex; flex-direction: column; min-width: 32rem; min-height: 100%; background: conic-gradient(#de32c9, #3153ec, #de32c9);
 background:radial-gradient(ellipse at 20% 20%, #de32c9 0%, transparent 50%),
   radial-gradient(ellipse at 60% 10%, #054d84 0%, transparent 80%),
   radial-gradient(ellipse at 90% 20%, #f2ec5d 0%, transparent 30%),
@@ -22,8 +22,9 @@ background:radial-gradient(ellipse at 20% 20%, #de32c9 0%, transparent 50%),
 
 .header-logo {font-size: 2.5rem; font-weight: 700; text-shadow: 0 0 .5rem rgba(0,0,0,.4); background: url(assets/images/@temp_01.jpg) no-repeat center center; background-size: cover; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: rgba(255,255,255,.5);}
 
-.main-box {display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 3rem; width: 90%; max-width: 92rem; padding: 3rem 10vw; border-radius: 2rem; box-shadow: 0 0 .5rem rgba(51,51,51, .5); background: rgba(255,255,255,.5);}
-.main-box a {display: inline-block; color: #333; font-size: 10rem; text-align: center;}
+.main-box {display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 5rem 3rem; width: 90%; max-width: 92rem; padding: 3rem 10vw; border-radius: 2rem; box-shadow: 0 0 .5rem rgba(51,51,51, .5); background: rgba(255,255,255,.5);}
+.main-box a {display: inline-block; position: relative; color: #333; font-size: 10rem; text-align: center; transition: all .5s ease;}
+.main-box a:hover {transform: scale(1.1); text-shadow: 0 0 .7rem rgba(255,255,255,.7); /* filter: grayscale(.5); */ mix-blend-mode: multiply;}
 
   </style>
 </head>
